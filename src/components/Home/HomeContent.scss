@@ -110,3 +110,41 @@
 .test-open {
   cursor: pointer;
 }
+.title-container-10 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 310px;
+}
+.icon-filter {
+  width: 40px;
+  height: 50px;
+  margin-left: 310px;
+}
+.title-icon-filter {
+  font-size: 24px;
+  margin-left: 360px;
+  font-weight: bolder;
+  margin-top: -46px;
+}
+.container-11 {
+  display: flex;
+  margin-left: 310px;
+}
+.container-12 {
+  font-size: 22px;
+  color: blue;
+  position: relative;
+  font-weight: bolder;
+}
+.container-12::before {
+  content: "";
+  bottom: -10px;
+  width: 100px;
+  position: absolute;
+  border-bottom: 2px solid blue;
+}
+.container-13 {
+  font-size: 22px;
+  margin-left: 67px;
+  font-weight: bolder;
+}

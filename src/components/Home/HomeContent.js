@@ -1,3 +1,4 @@
+import { UilFilter } from "@iconscout/react-unicons";
 import { Card, Col, Row } from "antd";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -13,6 +14,7 @@ import hinh16 from "../../assets/image/16.png";
 import hinh17 from "../../assets/image/17.png";
 import hinh18 from "../../assets/image/18.png";
 import { useState } from "react";
+
 const { Meta } = Card;
 export default function HomeContent() {
   const visible = useSelector((state) => state.login.visible);
@@ -89,12 +91,24 @@ export default function HomeContent() {
             </div>
           </div>
         </div>
+
         <div className="test-open" onClick={handleShow}>
           open
         </div>
         <div hidden={open}>
           content
           <p>Nhu cau</p>
+        </div>
+      </div>
+      <div className="container-9">
+        <div className="container-10">
+          <p className="title-container-10">Tất cả Laptop</p>
+          <UilFilter className="icon-filter" />
+          <p className="title-icon-filter">Bộ Lọc</p>
+        </div>
+        <div className="container-11">
+          <div className="container-12">Cơ Bản</div>
+          <div className="container-13">Nâng Cao</div>
         </div>
       </div>
     </div>
