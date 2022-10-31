@@ -28,7 +28,6 @@ import { Col, Row } from "antd";
 import React from "react";
 import "./footer.scss";
 import logo from "../../assets/image/logo2.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo3 from "../../assets/image/hinh5.png";
 import logo4 from "../../assets/image/hinh8.png";
 
