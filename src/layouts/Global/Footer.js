@@ -1,227 +1,158 @@
+import {
+  UilCarSideview,
+  UilMapMarker,
+  UilShoppingCartAlt,
+  UilUser,
+  UilSearch,
+  UilBars,
+  UilShoppingCart,
+  UilTruck,
+  UilBell,
+  UilCheckCircle,
+  UilArrowLeft,
+  UilArrowRight,
+  UilSync,
+  UilInfoCircle,
+  UilPhone,
+  UilFacebook,
+  UilBox,
+  UilMap,
+  UilClipboardAlt,
+  UilCommentVerify,
+  UilGlobe,
+  UilInstagramAlt,
+  UilYoutube,
+  UilTwitterAlt,
+} from "@iconscout/react-unicons";
 import { Col, Row } from "antd";
 import React from "react";
 import "./footer.scss";
-import { useNavigate } from "react-router-dom";
-import { UilLocationPinAlt } from "@iconscout/react-unicons";
+import logo from "../../assets/image/logo2.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo3 from "../../assets/image/hinh5.png";
+import logo4 from "../../assets/image/hinh8.png";
 
+import logo1 from "../../assets/image/footer1.png";
 export default function Footer() {
-  const navigate = useNavigate();
   return (
-    <div className="footer">
-      <div className="wrap">
-        <div className="footer-top">
-          <div class="container-footer">
-            <Row className="row-footer">
-              <Col span={4} className="info-footer">
-                <div className="item">
-                  <h3 className="footer-title">Thông tin liên hệ</h3>
-                  <div className="footer-content">
-                    <ul clasName="ft-ct">
-                      <li className="phoneNumber">
-                        <h3 className="title">Hotline:</h3>
-                        <ul>
-                          <li>
-                            <a href="sđt:0909686884">
-                              <b>090 968 6884</b>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="sđt:0946005077">
-                              <b>094 600 5077</b>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li
-                        className="mail_gr"
-                        style={{ marginTop: 10, marginBottom: 20 }}
-                      >
-                        <h3 className="title">Email:</h3>
-                        <ul>
-                          <li>
-                            <a href="mailto:sales@asics.com" className="mailto">
-                              <b>sales@asics.com</b>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="mailto:support@asics.com"
-                              className="mailto"
-                            >
-                              <b>support@asics.com</b>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="timeWork_gr">
-                        <h3 className="title">Giờ làm việc:</h3>
-                        <ul>
-                          <li>
-                            <p>
-                              <b>Thứ 2 - Thứ 7 09h:00 - 19h:00</b>
-                            </p>
-                          </li>
-                          <li>
-                            <p>
-                              <b>Chủ nhật 09h:00 - 18h:00</b>
-                            </p>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
-              <Col span={4} className="store-footer">
-                <div className="item">
-                  <h3 className="footer-title">Hệ thống cửa hàng</h3>
-                  <div className="footer-content">
-                    <ul clasName="ft-ct">
-                      <h3 className="title">TPHCM:</h3>
-                      <ul>
-                        <li>
-                          <UilLocationPinAlt
-                            style={{
-                              color: "red",
-                              width: 40,
-                              height: 40,
-                              paddingTop: 10,
-                            }}
-                          />
-                          <p>
-                            1583, 3 tháng 2, phường 16, quận 11, Hồ Chí Minh
-                          </p>
-                        </li>
-                        <li>
-                          <UilLocationPinAlt
-                            style={{
-                              color: "red",
-                              width: 40,
-                              height: 40,
-                              paddingTop: 17,
-                              margin: -2,
-                            }}
-                          />
-                          <p>828, Sư Vạn Hạnh, quận 10, Hồ Chí Minh</p>
-                        </li>
-                        <li>
-                          <UilLocationPinAlt
-                            style={{
-                              color: "red",
-                              width: 40,
-                              height: 40,
-                              paddingTop: 10,
-                            }}
-                          />
-                          <p>
-                            102 Trần Văn Kiểu, phường 2, quận 6, Hồ Chí Minh
-                          </p>
-                        </li>
-                      </ul>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
-              <Col span={4} className="quickLink-footer">
-                <div className="item">
-                  <h3 className="footer-title">Liên kết nhanh</h3>
-                  <div className="footer-content">
-                    <ul clasName="ft-ct">
-                      <li>
-                        <a
-                          className="qLink"
-                          title="Về Asics"
-                          onClick={() => {
-                            navigate("/about");
-                          }}
-                        >
-                          Về Asics
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="qLink"
-                          title="Sản phẩm"
-                          onClick={() => {
-                            navigate("/listproduct");
-                          }}
-                        >
-                          Sản phẩm
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="qLink"
-                          title="Liên hệ"
-                          onClick={() => {
-                            navigate("/contact");
-                          }}
-                        >
-                          Liên hệ
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="qLink"
-                          title="Tin Tức"
-                          onClick={() => {
-                            navigate("/blog");
-                          }}
-                        >
-                          Tin Tức
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="My_website">
-                    <a
-                      onClick={() => {
-                        navigate("/#");
-                      }}
-                      style={{ display: "flex" }}
-                    >
-                      <h1 style={{ color: "red" }}>A</h1>
-                      <h1 style={{ color: "white" }}>sics</h1>
-                    </a>
-                  </div>
-                </div>
-              </Col>
-            </Row>
+    <footer className="the-footer">
+      <div className="flex-4">
+        <div className="flex-5">
+          <p className="title-1">Tự tin mua sắm cùng Asicss</p>
+        </div>
+        <div className="section-1">
+          <div className="section-check">
+            <UilCheckCircle className="icon-check" />
+            <p className="title-2">Chế độ bảo đảm hành bận tâm </p>
+            <h1 className="title-3">
+              Tất cả các sản phẩm do Asicss bán ra đều được tuân thủ điều kiện
+              bảo hành của nhà cung cấp, hãng sản xuất. Nếu có vấn đề về chất
+              lượng sản phẩm, Asicss xin cam kết sẽ hỗ trợ Quý khách tới cùng.
+            </h1>
+            <h2 className="title-4">
+              Chi tiết <UilArrowRight className="icon-left" />
+            </h2>
+            <div className="section-tranf">
+              <UilSync className="icon-tranf" />
+              <p className="title-5">Hỗ trợ đổi trả 1-1 hoặc hoàn tiền 100%</p>
+              <h1 className="title-6">
+                Với thời gian dùng thử lên tới 15 ngày, Quý khách sẽ được hỗ trợ
+                đổi trả 1-1 hoặc hoàn tiền 100% nếu phát sinh lỗi hoặc cảm thấy
+                sản phẩm chưa đáp ứng được nhu cầu.
+              </h1>
+              <h2 className="title-7">
+                Chi tiết <UilArrowRight className="icon-left-1" />
+              </h2>
+            </div>
           </div>
         </div>
-        <div clasName="footer-bottom"></div>
+        <div className="duongngang">
+          <hr className="duongngang1"></hr>
+        </div>
+        <div className="img-footer-section-1">
+          <img src={logo1} className="footer-section-1"></img>
+        </div>
+        <div class="section-inf-1">
+          <div className="section-inf">
+            <UilInfoCircle className="icon-inf" />
+            <p className="title-8">Thông tin hữu ích </p>
+          </div>
+          <div className="section-hotline">
+            <UilPhone className="icon-phone" />
+            <p className="title-phone"> HotLine: 19008990</p>
+          </div>
+          <div className="section-hotline">
+            <UilFacebook className="icon-phone" />
+            <p className="title-phone"> Group trao đổi và hỗ trợ </p>
+          </div>
+          <div className="section-hotline">
+            <UilMap className="icon-phone" />
+            <p className="title-phone"> Hệ thống cửa hàng</p>
+          </div>
+          <div className="section-all-1">
+            <div className="section-all">
+              <UilBox className="icon-all" />
+              <p className="title-all"> Vận chuyển, thanh toán</p>
+            </div>
+            <div className="section-all">
+              <UilClipboardAlt className="icon-all" />
+              <p className="title-phone"> Tra cứu, bảo hành </p>
+            </div>
+            <div className="section-all">
+              <UilCommentVerify className="icon-all" />
+              <p className="title-all"> Bảng giá dịch vụ</p>
+            </div>
+          </div>
+        </div>
+        <div className="duongngang">
+          <hr className="duongngang1"></hr>
+        </div>
+        <div className="section-hi">
+          <UilGlobe className="icon-hi" />
+          <p className="title-9">Asicss trên social netwworks </p>
+        </div>
+        <div className="section-2">
+          <div className="facebook">
+            <UilFacebook class="icon-facebook" />
+            <p className="title-all-1"> Facebook</p>
+          </div>
+          <div className="facebook">
+            <UilInstagramAlt class="icon-facebook" />
+            <p className="title-all-1"> Instagram</p>
+          </div>
+          <div className="facebook">
+            <UilYoutube class="icon-youtube" />
+            <p className="title-all-1"> Youtube</p>
+          </div>
+          <div className="facebook">
+            <UilTwitterAlt class="icon-facebook" />
+            <p className="title-all-1"> Twitter</p>
+          </div>
+        </div>
+        <div className="flex-6">
+          <div className="logo">
+            <img src={logo} className="logo-footer" />
+            <p className="edit-since">-Since 2022-</p>
+          </div>
+          <div className="section-about">
+            <div className="section-about-1">
+              <p className="vechungtoi">Về Chúng Tôi</p>
+              <p className="vechungtoi">Vì Khách Hàng</p>
+              <p className="vechungtoi">Đội Ngũ</p>
+            </div>
+            <div className="section-about-2">
+              <div className="section-about-3">
+                <p className="vechungtoi">Tin Tức</p>
+                <p className="vechungtoi1"> Khuyến Mãi</p>
+                <img src={logo3} className="bocongthuong" />
+              </div>
+            </div>
+          </div>
+          <div className="img-cuahang">
+            <img src={logo4} className="footer-end" />
+          </div>
+        </div>
       </div>
-      {/* <div className="footer-title">
-        <Row>
-          <Col span={12} className="title-footer">
-            Sign up to Newsletter
-          </Col>
-          <Col span={12} className="input-footer">
-            <input className="boder-footer" type="text"></input>
-            <button className="button-signup-footer">SignUp</button>
-          </Col>
-        </Row>
-      </div>
-      <div className="footer-content">
-        <Row>
-          <Col span={12} className="footer-info">
-            <ul>
-              <li className="name-info">ASICC</li>
-              <li>
-                <h1>+84098763321</h1>
-              </li>
-              <li>
-                <b>Contact info</b>
-              </li>
-              <li>
-                Lầu 5, 35 Nguyễn Văn Tráng, Phường Bến Nghé, Quận 1, Tp.HCM
-              </li>
-              <li>icon</li>
-            </ul>
-          </Col>
-          <Col span={12} className="footer-intro"></Col>
-        </Row>
-      </div> */}
-    </div>
+    </footer>
   );
 }

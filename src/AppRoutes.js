@@ -1,10 +1,9 @@
-import React, { lazy, Suspense } from "react";
+import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Global from "../src/layouts/Global";
 import { globalRoutes } from "./Routes";
 import _ from "lodash";
 export default function AppRoutes() {
-  const Home = lazy(() => import("./components/Home/HomeContent"));
 
   return (
     <Suspense>

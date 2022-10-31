@@ -1,8 +1,8 @@
 import { lazy } from "react";
 
-const path = "/cart";
+const path = "/Cart";
 
-const cartRoute = {
+const homeRoute = {
   key: "cart",
   path,
   breadcrumbs: [
@@ -12,4 +12,4 @@ const cartRoute = {
   ],
   component: lazy(() => import("./CartContent")),
 };
-export default cartRoute;
+export default homeRoute;

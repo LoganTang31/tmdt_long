@@ -4,39 +4,38 @@ import React from "react";
 import logo from "../../assets/image/logo.png";
 import { UilAirplay } from "@iconscout/react-unicons";
 import TextArea from "antd/lib/input/TextArea";
-import "./contact.scss";
 
 export default function ContactUs() {
   const handleSubmit = (values) => {
     console.log(`values`);
   };
   return (
-    <div style={{ paddingTop: 100, margin: 100 }}>
+    <div>
       <Row>
         <Col span={12}>
           <Card
             style={{
               width: 600,
-              height: 820,
+              height: 750,
               marginLeft: 150,
               borderRadius: 30,
             }}
-            cover={<img alt="hinh" src={logo} style={{ borderRadius: 30 }} />}
+            cover={<img alt="hinh" src={logo} />}
           >
             <div style={{ marginLeft: 50, fontSize: 20 }}>
-              <b>Asics HCM (Làm việc từ 9h00 - 20h00)</b>
+              <b>ASICC HCM (Làm việc từ 9h00 - 20h00)</b>
               <br />
               <br />
-              <p>1583, 3 tháng 2, phường 16, quận 11, Hồ Chí Minh</p>
-              <p>828, Sư Vạn Hạnh, quận 10, Hồ Chí Minh</p>
-              <p> 102 Trần Văn Kiểu, phường 2, quận 6, Hồ Chí Minh</p>
+              Lầu 5, 35 Nguyễn Văn Tráng, P.Bến Nghé, Quận 1,TP.HCM
               <br />
-              <p>Phone: 090 968 6884</p>
-              <p>Phone: 094 600 5077</p>
               <br />
-              Email bán hàng:sales@asics.com
+              Phone:(028) 7109 1181
               <br />
-              CSKH Asics:support@asics.com
+              <br />
+              Email bán hàng:sales@theasicc.com
+              <br />
+              <br />
+              CSKH ASICC:cskh@theasicc.com
             </div>
           </Card>
         </Col>
@@ -44,7 +43,7 @@ export default function ContactUs() {
         <Col span={12}>
           <Form onFinish={handleSubmit}>
             <h2>
-              <b style={{ fontSize: 40, color: "red" }}>Liên hệ</b>
+              <b>Form liên hệ</b>
             </h2>
             <p>
               Chúng tôi muốn lắng nghe ý kiến từ quý khách hàng Vui lòng liên hệ
@@ -57,7 +56,6 @@ export default function ContactUs() {
                 <Col span={6}>
                   <p>Họ và tên *</p>
                   <Form.Item
-                    style={{ marginRight: 20 }}
                     name="fullname"
                     rules={[
                       {
@@ -74,7 +72,6 @@ export default function ContactUs() {
                   </Form.Item>
                   <p>Số điện thoại</p>
                   <Form.Item
-                    style={{ marginRight: 20 }}
                     name="phone"
                     rules={[
                       {
@@ -96,7 +93,6 @@ export default function ContactUs() {
                 <Col span={6}>
                   <p>Email</p>
                   <Form.Item
-                    style={{ Left: 20 }}
                     name="email"
                     rules={[
                       {
@@ -114,7 +110,6 @@ export default function ContactUs() {
 
                   <p>Tiêu đề</p>
                   <Form.Item
-                    style={{ Left: 20 }}
                     name="title"
                     rules={[
                       {
@@ -154,11 +149,7 @@ export default function ContactUs() {
                 />
               </Form.Item>
             </div>
-            <Button
-              type="primary"
-              htmlType="submit"
-              className="btn-submit_contact"
-            >
+            <Button type="primary" htmlType="submit">
               Gửi ngay
             </Button>
           </Form>
